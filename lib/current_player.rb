@@ -11,9 +11,7 @@ def turn_count(board)
   positions_occupied
 end
 
-#current_player returns the correct player, X, for the first move
+#current_player returns the correct player
 def current_player(board)
-  player_turn = ""
   turn_count(board).even? ? player_turn = "X" : player_turn = "O"
-  player_turn
 end
